@@ -1,4 +1,4 @@
-# DOM Manipulation Part-2
+# DOM Manipulation Part-1
 ## Event Listener
 
 ### element.addEventListener('click', function)

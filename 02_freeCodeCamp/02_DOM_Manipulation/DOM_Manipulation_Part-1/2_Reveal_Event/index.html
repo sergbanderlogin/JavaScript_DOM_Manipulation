@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reveal Event</title>
+
+    <style>
+        :root {
+            --color-deepBlue: #023047
+        }
+
+        body {
+            background: var(--color-deepBlue);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #main-heading {
+            margin: 40px;
+            font-size: 48px;
+            color: #fff;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .hidden-content {
+            margin: 40px 10px;
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            font-weight: 400;
+        }
+
+
+
+        .boxes {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border: 2px solid white;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            border-radius: 18px;
+            padding: 30px;
+        }
+
+        .reveal-btn {
+            margin: 40px 10px;
+            font-size: 24px;
+            color: #fff;
+            background: transparent;
+            padding: 12px 25px;
+            border: 1px solid #ffffff;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .hidden-content {
+            display: none;
+        }
+
+        .hidden-content.reveal-btn {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+<h1 id="main-heading">Event Listeners</h1>
+<div class="container">
+    <button class="reveal-btn boxes">Reveal More</button>
+    <div class="hidden-content boxes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta facilis maxime
+        perspiciatis, quas quidem similique tempora. Deleniti nesciunt nisi voluptatum! Accusamus aliquid atque deserunt
+        distinctio enim eos eveniet fugit impedit in, ipsam iure laborum modi molestias nulla odio omnis porro
+        praesentium quia quidem reiciendis reprehenderit sint temporibus, vel veniam vitae!
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

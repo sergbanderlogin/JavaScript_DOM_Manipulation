@@ -1,0 +1,1 @@
+all examples were taken from the examples shown in the video JavaScript DOM Manipulation – Full Course for Beginners:  https://www.youtube.com/watch?v=5fb2aPlgoys - author:  freeCodeCamp.org

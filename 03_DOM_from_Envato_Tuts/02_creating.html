@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <title> Creating and Adding Elements</title>
+    <style>
+        body {
+            font-size: 1.5em;
+            margin: 15px;
+        }
+
+        .dark {
+            background-color: #01012b;
+            color: white;
+        }
+    </style>
+</head>
+<body class="dark">
+
+<h1 id="intro-text">Manipulating the DOM</h1>
+
+<!--
+<ul>
+    <li>Intro to DOM</li>
+    <li>Getting</li>
+</ul>
+-->
+
+<script>
+    let topics = [
+        'Intro to DOM',
+        'Getting Elements',
+        'Querying the DOM',
+        'Creating Element',
+    ];
+
+    let h1Element = document.getElementById('intro-text');
+    let scriptElement = document.querySelector('script');
+
+    let olElement = document.createElement('ol');
+
+   /* let li1 = document.createElement('li');
+    let text1 = document.createTextNode('Intro to DOM');
+
+    let li2 = document.createElement('li');
+    let text2 = document.createTextNode('Getting Elements');
+
+    li1.appendChild(text1);
+    olElement.appendChild(li1);
+
+    li2.appendChild(text2);
+    olElement.appendChild(li2);*/
+
+    topics.forEach(function (text){
+        let li = document.createElement('li');
+        li.innerHTML = text;
+
+        olElement.appendChild(li);
+    })
+
+    // document.body.appendChild(olElement);
+    // document.body.insertBefore(olElement, scriptElement);
+
+    h1Element.insertAdjacentElement('afterend', olElement);
+
+</script>
+
+
+</body>
+</html>
